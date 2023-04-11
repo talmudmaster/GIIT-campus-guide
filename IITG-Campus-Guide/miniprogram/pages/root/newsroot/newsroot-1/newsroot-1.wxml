@@ -1,0 +1,28 @@
+<!--miniprogram/pages/root/newsroot/newsroot-1/newsroot-1.wxml-->
+<view style="margin-left:12rpx">
+    id
+    <view class="a">
+        <textarea style="height:80rpx" type="text" bindinput="gettitle" value="{{title}}"></textarea>
+        <image class="Intnew" src="../../../../images/root/del.png" mode="aspectFit" bindtap="title"></image>
+    </view>
+    id图片：<text style="color:#ff4400">(只能用16:9的图片)</text>
+    <view class="a">
+        <input type="text" bindinput="getjpg" value="{{jpg}}"></input>
+        <image class="Intnew" src="../../../../images/root/del.png" mode="aspectFit" bindtap="jpg"></image>
+    </view>
+    id详情：(用空格：<text style="color:#ff4400" data-connet="&ensp;" bindtap="copy">&ensp;</text>)
+    <view class="a">
+        <textarea maxlength="-1" style="height:450rpx" bindinput="getnew" value="{{news}}"></textarea>
+        <image class="Intnew" src="../../../../images/root/del.png" mode="aspectFit" bindtap="new"></image>
+    </view>
+    <view style="display: flex; flex-direction:row ;margin-top:15rpx">
+        <button bindtap="onUpdate">修改</button>
+        <button bindtap="onDel">删除</button>
+    </view>
+    <view>标题:{{title}}</view>
+
+    <view>图片地址:{{jpg}}</view>
+
+    <view>时间:{{time}}</view>
+
+</view>

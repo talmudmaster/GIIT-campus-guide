@@ -1,0 +1,51 @@
+/* miniprogram/pages/school/school.wxss */
+/*轮播图*/
+.slide-image {
+  width: 100%;
+ height: auto;
+  border-radius:8px
+ }
+ .swiper .wx-swiper-dot {
+	width: 15rpx;
+	height: 15rpx;
+	background: #eee;
+  border-radius: 50%;
+  position:relative;
+  left: unset!important;
+  right: 0;
+}
+ .swiper .wx-swiper-dot.wx-swiper-dot-active {
+  width: 33rpx;
+  height: 15rpx;
+  background: #888888;
+  border-radius: 15rpx;
+}
+/* 指示点靠右 */
+.wx-swiper-dots{position:relative;left: unset!important;right: 0;}
+.menu{
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 公告 */
+.swiper_container {
+     height: 55rpx;
+     width: 80vw;
+   }
+   
+   .swiper_item {
+     font-size: 25rpx;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 2px;
+  }
+  .aa{
+  display: -webkit-box;
+	font-size: 27rpx;
+	color: #000000;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }

@@ -1,0 +1,34 @@
+<!--miniprogram/pages/school/gonggao/gong1/gong1.wxml-->
+<view style="background:#ffffff">
+  <view style="padding-top:11rpx;font-size: 19px;margin-left:11rpx;font-weight:bold">报到流程：</view>
+  <view style="font-size: 28rpx;margin-left:15rpx;margin-top:17rpx;">
+    <view style="margin-top:3rpx;">1.到达机场==>（坐机场大巴到桂林站）/桂林站/桂林北站/桂林西站/桂林汽车站</view>
+    <view style="margin-top:3rpx;">2.找到穿着本学院学生会的师兄姐（穿着工作服）</view>
+    <view style="margin-top:3rpx;">3.领取登车牌等候大巴车直达学校</view>
+    <view style="margin-top:3rpx;">4.下车后由工作人员指引你到对应的报到处报道，交齐准备好的材料和可爱的毛爷爷</view>
+    <view style="margin-top:3rpx;">5.找到相对应楼层，对应宿舍后，就可以成功入住了，如果你没有小米手机的遥控器，就问宿管阿姨拿一个空调遥控器</view>
+    <view style="margin-top:3rpx;">6.在宿舍结识新同伴，坐等助班召唤召开班级会议</view>
+    <view style="margin-top:3rpx;">7.再等候一两天就开始军训咯！这两天期间助班可能会带你们做游戏</view>
+    <view style="margin-top:3rpx;"><view style="font-weight:bold;color:red;font-size: 29rpx;">注意！！注意！！注意！！！</view> 入住成功后，就要服从管理，不能在外过夜咯！！</view>
+  </view>
+  <view style="margin-top:10rpx;display: flex; flex-direction:row ;">
+    <image bindtap="lookPhoto1" style="width：375rpx" src="cloud://bishe-2gzem6jbbfcfaed5.6269-bishe-2gzem6jbbfcfaed5-1300452344/images/photos/流程.jpg"></image>
+    <image bindtap="lookPhoto2" style="width：375rpx" src="cloud://bishe-2gzem6jbbfcfaed5.6269-bishe-2gzem6jbbfcfaed5-1300452344/images/photos/去市区.jpg"></image>
+  </view>
+  <view style="marigin-top:11rpx;font-size: 19px;margin-left:11rpx;font-weight:bold">旅游计划：</view>
+  <view style="margin-left:15rpx;">
+  <view style="margin-top:3rpx;font-size: 33rpx;color: #0a99ace1;">七星景区</view>
+  <view style="margin-top:3rpx;font-size: 28rpx;" ><text decode="{{true}}"> &ensp;&ensp;&ensp;&ensp;七星景区因有七星山、七星岩而得名，是桂林市最大、历史最悠久、景点最多的综合性公园。七星景区堪称 桂林山水文化的缩影”，山青、水秀、洞奇、石美等特点在这里聚集，主要景点有七星岩、华夏之光”浮雕壁画、驼峰叠翠、月牙楼、花桥、小广寒、桂海碑林、碧虚阁、盆景艺苑、奇石馆、动物园等。</text></view>
+    <view style="margin-top:3rpx;font-size: 33rpx;color: #0a99ace1;">芦笛景区</view>
+    <view style="margin-top:3rpx;font-size: 28rpx;" ><text decode="{{true}}">&ensp;&ensp; &ensp;&ensp;芦笛景区因洞口长有一种可做笛子的芦荻草而得名。它堪称是一处极尽造化神奇的游览佳境，被誉为大自然艺术之宫，因为来这里的领导人特别多，所以又被称为国宾洞。 这个奇幻洞府中有琳琅满目的石笋、石钟乳、石幔、石花、珊瑚。这些钟乳石都是因为地下水溶解岩石中的碳酸钙，经过上百万年的沉淀结晶堆积而成。</text></view>
+      <view style="margin-top:3rpx;font-size: 33rpx;color: #0a99ace1;">象山公园</view>
+      <view style="margin-top:3rpx;font-size: 28rpx;" ><text decode="{{true}}">&ensp;&ensp; &ensp;&ensp;象山公园荟萃了桂林山水和人文景观精华，是游客到桂林的必去之处。公园以象鼻山为主体，因为山形酷似一头巨象临江汲水而得名。象鼻山海拔200米，由3.6亿年前的石灰岩组成，主要景点有水月洞、象鼻岩、象眼岩、普贤塔、云峰寺及舍利塔。象山因为栩栩如生的形象让人为之倾倒，被认为是桂林山水的代表以及桂林城的象征。</text></view>
+        <view style="margin-top:3rpx;font-size: 33rpx;color: #0a99ace1;">两江四湖</view>
+        <view style="margin-top:3rpx;font-size: 28rpx;" ><text decode="{{true}}"> &ensp;&ensp;&ensp;&ensp;两江四湖是桂林市中心的漓江、桃花江、榕湖、杉湖、桂湖、木龙湖的总称。夜游两江四湖已经成为桂林市夜游市场新的品牌代表。你们乘船不仅可游览中国古典式园林榕杉湖景区,天人合一的生态园林桂湖景区、宋历史文化园一木龙湖景区3大各具特色的主景区，还能够欣赏到名桥博览园、名花名树名草博览  园、亭台楼阁博览园和雕塑博览园象山、伏波山、叠彩山也会一一展现在你们眼前。</text></view>
+        </view>
+  <!-- <view style="margin-top:25rpx;margin-left:95rpx;">
+    <video style="width：100%" src="cloud://bishe-2gzem6jbbfcfaed5.6269-bishe-2gzem6jbbfcfaed5-1300452344/video/视频.mp4"></video>
+  </view>
+  <view style="display: flex;align-items: center;justify-content: center;font-size: 20rpx;">网络视频不代表个人观点</view> -->
+  <view style="margin-top:100rpx;"></view>
+</view>

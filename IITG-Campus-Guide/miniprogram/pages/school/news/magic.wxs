@@ -1,0 +1,11 @@
+var split = function (tag) {
+    if (tag) {
+        var a = tag.split("&"); //我这里请求到的数据是以'.'分隔的，需要根据业务需求改成你自己的分隔符
+        return a;
+    } else {
+        return
+    }
+}
+module.exports = {
+    split: split,
+}

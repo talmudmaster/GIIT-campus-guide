@@ -1,0 +1,75 @@
+<!--miniprogram/pages/school/information/information.wxml-->
+<view>
+    <view style="background:#ffffff;">
+        <view style="height:50rpx;width:100%;margin-left:15rpx;">校园部门信息</view>
+    </view>
+    <view style="white:100%;height:190rpx; margin-top:7rpx;background:#ffffff">
+        <view style="padding-top:35rpx;display: flex; flex-direction:row ;">
+            <view wx:if="isShow" style="display: flex; flex-direction:column " bindtap="a" data-connet="http://www.guit.edu.cn/xxgc/">
+                <image class="menu" style="margin-left:85rpx" src="../../../images/school/1.png"></image>
+                <view style="font-size: 24rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    信息工程系</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="b" data-connet="http://www.guit.edu.cn/dzgc/">
+                <image class="menu" style="margin-left:85rpx" src="../../../images/school/2.png"></image>
+                <view style="font-size: 24rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    电子工程系</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="c" data-connet="http://www.guit.edu.cn/jdgcx/">
+                <image class="menu" style="margin-left:95rpx" src="../../../images/school/3.png"></image>
+                <view style="font-size: 24rpx;margin-left:67rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    机电工程系</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="d" data-connet="http://www.guit.edu.cn/glx/">
+                <image class="menu" style="margin-left:77rpx" src="../../../images/school/4.png"></image>
+                <view style="font-size: 24rpx;margin-left:77rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    管理系</view>
+            </view>
+        </view>
+    </view>
+    <view style="white:100%;height:190rpx; margin-top:7rpx;background:#ffffff">
+        <view style="padding-top:35rpx;display: flex; flex-direction:row ;">
+            <view wx:if="isShow" style="display: flex; flex-direction:column " bindtap="aa" data-connet="http://www.guit.edu.cn/sjx/">
+                <image class="menu" style="margin-left:85rpx" src="../../../images/school/5.png"></image>
+                <view style="font-size: 24rpx;margin-left:75rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    设计系</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="bb" data-connet="http://www.guit.edu.cn/wyx/">
+                <image class="menu" style="margin-left:115rpx" src="../../../images/school/6.png"></image>
+                <view style="font-size: 24rpx;margin-left:80rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    外贸与外语系</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="cc" data-connet="http://www.guit.edu.cn/tsg/">
+                <image class="menu" style="margin-left:72rpx" src="../../../images/school/7.png"></image>
+                <view style="font-size: 24rpx;margin-left:72rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    图书馆</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="dd" data-connet="http://www.guit.edu.cn/xxzx/">
+                <image class="menu" style="margin-left:94rpx" src="../../../images/school/8.png"></image>
+                <view style="font-size: 24rpx;margin-left:80rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    信息中心</view>
+            </view>
+        </view>
+    </view>
+    <view style="background:#ffffff">
+        <view style="height:50rpx;width:100%;margin-left:15rpx;margin-top:7rpx;">校园信息群</view>
+    </view>
+    <view style="background:#ffffff;font-size: 26rpx;">
+        <view style="height:260rpx;width:100%;margin-left:50rpx;margin-top:7rpx;color:#bbc7c9f8">
+            <view style="padding-top:15rpx;">校园万事屋群号：<text style="color:#1baef1f8" user-select="true">373435359</text> </view>
+            <view style="padding-top:15rpx;">信科万能群群号：<text style="color:#1baef1f8" user-select="true">585388125</text> </view>
+            <view style="margin-top:7rpx;">信科悬赏互助群：<text style="color:#1baef1f8" user-select="true">982428220</text> </view>
+            <view style="margin-top:7rpx;">桂电信科巴拉巴拉树：<text style="color:#1baef1f8" user-select="true">1070549053</text> </view>
+            <view style="margin-top:7rpx;">桂电信科贴吧群：<text style="color:#1baef1f8" user-select="true">559419370</text> </view>
+        </view>
+    </view>
+    <view style="background:#ffffff">
+        <view style="height:50rpx;width:100%;margin-left:15rpx;margin-top:7rpx;">校园基本信息</view>
+    </view>
+    <view style="height:300rpx;background:#ffffff;margin-top:7rpx;">待开发</view>
+    <view style="background:#ffffff">
+        <view style="height:50rpx;width:100%;margin-left:15rpx;margin-top:7rpx;">校园基本信息</view>
+    </view>
+    <view style="height:330rpx;background:#ffffff;margin-top:7rpx;">待开发</view>
+
+</view>

@@ -1,0 +1,34 @@
+<!--pages/jianjie/jianjie.wxml-->
+<!-- <text>pages/jianjie/jianjie.wxml</text> -->
+<swiper class="swiper-item" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+            <view>
+                <image src="{{item}}" class="swiper-item-image" mode="widthFix" bindload="imgHeight"></image>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view class="title-font">
+    <view class="title-font-1">
+        桂林电子科技大学信息科技学院
+    </view>
+</view>
+
+<view class="text-font">
+    <text user-select="true" decode="true">&ensp;&ensp;&ensp;&ensp;桂林电子科技大学信息科技学院（以下简称学校）创办于2001年，是经教育部批准设立的实施普通本科学历教育的高等院校。举办方桂林电子科技大学是全国四所电子科技大学之一，是工业和信息化部与广西壮族自治区共建高校，广西壮族自治区重点建设高校。中国绕月探测工程总设计师、国家最高科学技术奖获得者、中国科学院孙家栋院士为桂林电子科技大学名誉校长。</text>
+    <text user-select="true" decode="true">&ensp;&ensp;&ensp;&ensp;学校坐落在历史文化名城、国际旅游胜地桂林，毗邻桂林电子科技大学花江校区。依托桂林电子科技大学的学科、专业优势以及优质的教育教学和管理资源，已逐步发展成为具有较高办学水平的普通本科院校。现有33个本科专业，面向全国23个省（市、自治区）招收全日制普通本科生，在校生12600余人。</text>
+</view>
+
+<view class="video-font">
+    校园风光
+</view>
+
+<view class="video">
+    <video src="https://talmudmaster.gitee.io/video/GLUlandscape.avi" />
+</view>
+
+<view class="bottom-font">
+    信息来源：学校官网
+</view>

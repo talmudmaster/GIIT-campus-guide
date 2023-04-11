@@ -1,0 +1,30 @@
+<!--miniprogram/pages/root/newsroot/newsroot.wxml-->
+<view style="margin-left:12rpx">
+    id
+    <view class="a">
+        <textarea style="height:80rpx" type="text" bindinput="gettitle" value="{{title}}"></textarea>
+        <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="title"></image>
+    </view>
+    id图片：<text style="color:#ff4400">(只能用16:9的图片)</text>
+    <view class="a">
+        <input type="text" bindinput="getjpg" value="{{jpg}}"></input>
+        <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="jpg"></image>
+    </view>
+    id详情：(用空格：<text style="color:#ff4400" data-connet="&ensp;" bindtap="copy">&ensp;</text>)
+    <view class="a">
+        <textarea maxlength="-1" bindinput="getnew" value="{{news}}"></textarea>
+        <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="new"></image>
+    </view>
+    <view style="display: flex; flex-direction:row ;margin-top:15rpx">
+        <button bindtap="onAdddate">Add</button>
+        <button bindtap="doUpload">上传图片</button>
+        <button bindtap="getnews">查看</button>
+    </view>
+    <view>------------------------------------------------------</view>
+    <view wx:for="{{list}}" wx:key="key">
+        <view bindtap="goBack" data-id="{{item._id}}">主题:{{item.title}}</view>
+        <view bindtap="goBack" data-id="{{item._id}}">图片地址:{{item.jpg}}</view>
+        <view bindtap="goBack" data-id="{{item._id}}">时间:{{item.time}}</view>
+        <view>------------------------------------------------------</view>
+    </view>
+</view>

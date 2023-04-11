@@ -1,0 +1,53 @@
+请输入latitude：
+<view class="a">
+    <input type="text" bindinput="getLa" name='latitude' value="{{latitude}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="q"></image>
+</view>
+请输入longitude：
+<view class="a">
+    <input type="text" bindinput="getLo" name='longitude' value="{{longitude}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="w"></image>
+</view>
+请输入地址：
+<view class="a">
+    <input type="text" bindinput="getAd" name='address' value="{{address}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="e"></image>
+</view>
+<picker bindchange="doType" mode="selector" range="{{getmptype}}" value="{{casIndex}}" data-getmptype="{{getmptype[casIndex]}}">
+    选择地址类型：
+    <text id="cqh">{{getmptype[casIndex]}}</text>
+</picker>
+请输入marker图标地址：
+<view class="a">
+    <input type="text" bindinput="getIm" name='images' value="{{images}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="r"></image>
+</view>
+请输入图片地址：
+<view class="a">
+    <input type="text" bindinput="getPh" name='images' value="{{Photos}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="t"></image>
+</view>
+请输入marker地址介绍：
+<view class="a">
+    <input type="text" bindinput="getTe" name='images' value="{{Text}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="y"></image>
+</view>
+<view style="display: flex; flex-direction:row ;">
+    <button bindtap="onUpdate">点击更新</button>
+    <button bindtap="onDel">点击删除</button>
+</view>
+<view>Id:{{the.id}}</view>
+
+<view>Latitude:{{latitude}}</view>
+
+<view>Longitude:{{longitude}}</view>
+
+<view>Address:{{address}}</view>
+
+<text>类型:{{the.mptype}}</text>
+
+<view>marker图标地址:{{images}}</view>
+
+<view>图片地址:{{Photos}}</view>
+
+<view>marker地址介绍:{{Text}}</view>

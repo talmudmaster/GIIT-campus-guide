@@ -1,0 +1,66 @@
+<!--pages/school/bus/bus.wxml-->
+<view class="card">
+    <view class="card-title">
+        <image class="card-title-img" src="../../../images/school/car.png" />
+        <view class="card-title-font">
+            交通信息
+        </view>
+    </view>
+
+    <view class="card-container">
+        <view class="card-container-title">
+            <image class="card-container-title-img" src="../../../images/school/bus.png" />
+            <view class="card-container-title-font">
+                公交信息
+            </view>
+        </view>
+        <view class="card-container-text">
+            <text decode="true">&ensp;&ensp;&ensp;&ensp;<text class="card-container-text-key-key">116路公交车</text>，坐车可到<text class="card-container-text-key">桂林北站</text>。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;<text class="card-container-text-key-key">13路公交车</text>，坐车直达<text class="card-container-text-key">桂林电子科技大学东区</text>。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;支持微信、支付宝、桂林出行网等一系列支付方式，票价2元。建议使用<text class="card-container-text-key-key">桂林出行网</text>，通付码有9折优惠。</text>
+        </view>
+    </view>
+
+    <view class="card-container">
+        <view class="card-container-title">
+            <image class="card-container-title-img" src="../../../images/school/new.png" />
+            <view class="card-container-title-font">
+                其他出行方式
+            </view>
+        </view>
+        <view class="card-container-text">
+            <text decode="true">&ensp;&ensp;&ensp;&ensp;<text class="card-container-text-key-key">包车/拼滴滴打车</text>，可以组队一起去<text class="card-container-text-key">市区</text>。如果找不到人可以去万能群找小伙伴(有风险！)。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;<text class="card-container-text-key-key">租车行租电动车</text>，在校外用校园一卡通去租车，按时计费，如果远行，不推荐该方式。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;开学和放假时有<text class="card-container-text-key-key">定制公交</text>，来往<text class="card-container-text-key">桂林站/桂林北站</text>与高校之间，可以前往桂林出行网了解详情。</text>
+        </view>
+    </view>
+
+    <view class="card-container">
+        <view class="card-container-title">
+            <image class="card-container-title-img" src="../../../images/school/guilinchuxingwang.png" />
+            <view class="card-container-title-font">
+                桂林出行网注册使用流程
+            </view>
+        </view>
+        <view class="card-container-text">
+            <text decode="true">&ensp;&ensp;&ensp;&ensp;第一步：搜索公众号桂林出行网或者下载桂林出行网APP。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;第二步，根据要求注册账号，注册完成后进行账号登录</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;第三步，登录成功后充值一定的金额，便可以点击<text class="card-container-text-key">通付码（9折优惠）</text>进行支付（乘车码无优惠）。下次使用时，用相同方法登录==>>使用通付码支付。</text>
+
+            <text decode="true">\n&ensp;&ensp;&ensp;&ensp;<text class="card-container-text-key">桂林出行网APP</text>可以查询所有公交线路和<text class="card-container-text-key-key">实时公交位置</text>，强烈推荐哦！！！</text>
+        </view>
+    </view>
+
+    <view class="bottom-font">
+        <view>
+            非实时交通数据 | 请注意官方最新交通信息
+        </view>
+    </view>
+
+</view>

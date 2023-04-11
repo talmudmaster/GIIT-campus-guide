@@ -1,0 +1,152 @@
+<!--miniprogram/pages/school/school.wxml-->
+<view>
+    <view style="background:white">
+        <view>
+            <view style="padding-top:11rpx;font-size: 22px;margin-left:11rpx;font-weight:bold"> <text bindtap="copy" data-connet="https://720yun.com/t/2f9jeshvkf4">校园风光</text>
+                <image src="../../images/school/mp3.png" style="height:45rpx;width:45rpx;margin-top:7rpx;margin-left:485rpx;" bindtap="mp3"></image>
+            </view>
+        </view>
+        <view class="swiper" style="margin-top:20rpx;">
+            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circular}}" next-margin="20px" style="height:400rpx">
+                <block wx:for="{{imgUrls}}" wx:key="key">
+                    <swiper-item data-link="{{item.link}}" bindtap="changeURL">
+                        <view style="margin-left:22rpx;">
+                            <image src="{{item.url}}" class="slide-image" mode="widthFix" bindload="imgHeight" />
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view style="position:relative;margin-top:-66rpx;margin-left:313rpx;">
+                <image src="../../images/school/schoollog.png" style="height:130rpx;width:130rpx"></image>
+            </view>
+        </view>
+
+        <view style="width:100%;display:flex;justify-content:center;margin-top:5rpx;padding-bottom:8rpx;font-size: 34rpx;">桂林电子科技大学信息科技学院
+        </view>
+    </view>
+
+    <view style="width:100%;height:170rpx;background:white;padding-top:12rpx;">
+        <view style="display: flex; flex-direction: row;width:100%;padding-top:15rpx">
+            <view style="background:#ec3b2ecc;color:white;  border-radius: 15px;font-size: 26rpx;margin-left:4%;">
+                <text decode="{{true}}">&ensp;校训 : 博文约礼 · 敬事益谦&ensp;</text>
+            </view>
+            <view style="background:#37b69aea; color:white; border-radius: 15px;font-size: 26rpx;margin-left:8%;">
+                <text decode="{{true}}">&ensp;中国综合实力独立学院&ensp;</text>
+            </view>
+        </view>
+        <view style="display: flex; flex-direction: row;padding-top:20rpx">
+            <view style="width:50%;">
+                <view style="font-size: 28rpx;margin-left:20%;">建校时间：2001年</view>
+                <view style="font-size: 28rpx;margin-left:20%;">院校类型：综合类</view>
+            </view>
+            <view style="width:50%">
+                <view style="font-size: 28rpx;margin-left:10%;">办校类型：独立学院</view>
+                <view style="font-size: 28rpx;margin-left:10%;">所在地：广西桂林 · 花江</view>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top:7rpx;height:75rpx;background:white;">
+        <view style="display: flex; flex-direction: row;align-items: center;height: 100%;">
+            <image style="width:60rpx;height:60rpx;margin-left:15rpx;" src="../../images/school/laba.png"></image>
+            <view style="margin-top:20rpx;margin-left:17rpx;width: 90%;">
+                <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+                    <block wx:for="{{msgList}}" wx:key="key">
+                        <swiper-item data-url="{{item.url}}" bindtap="changeGonggao">
+                            <view class="swiper_item" style="font-size: 25rpx;color:#7c19dae1">{{item.title}}</view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+    </view>
+    <view style="height:190rpx; margin-top:7rpx;background:#ffffff">
+        <view style="padding-top:35rpx;display: flex; flex-direction: row;">
+            <view wx:if="isShow" style="display: flex; flex-direction:column " bindtap="a">
+                <image class="menu" style="margin-left:60rpx" src="../../images/school/school.png"></image>
+                <view style="font-size: 22rpx;margin-left:60rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    学校简介</view>
+            </view>
+
+            <view style="display: flex; flex-direction:column " bindtap="b">
+                <image class="menu" style="margin-left:55rpx" src="../../images/school/schoolnew.png"></image>
+                <view style="font-size: 22rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    校园信息</view>
+            </view>
+
+            <view style="display: flex; flex-direction:column " bindtap="c">
+                <image class="menu" style="margin-left:55rpx" src="../../images/school/bus.png"></image>
+                <view style="font-size: 22rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    交通出行</view>
+            </view>
+
+            <view style="display: flex; flex-direction:column " bindtap="d">
+                <image class="menu" style="margin-left:55rpx" src="../../images/school/note.png"></image>
+                <view style="font-size: 22rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    学校官微</view>
+            </view>
+            <view style="display: flex; flex-direction:column " bindtap="e">
+                <image class="menu" style="margin-left:55rpx" src="../../images/school/mp3list.png"></image>
+                <view style="font-size: 22rpx;margin-left:55rpx;display: flex;margin-top:10rpx;align-items: center;justify-content: center; ">
+                    音乐征集</view>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top:7rpx;height:75rpx;background:white;">
+        <view style="display: flex; flex-direction: row;">
+            <image style="width:60rpx;height:60rpx;margin-left:15rpx;" src="../../images/school/laba.png"></image>
+            <view style="margin-left:20rpx; margin-top:10rpx;font-size: 32rpx;">
+                新闻公告
+            </view>
+        </view>
+    </view>
+
+    <!-- 新闻一 -->
+    <view bindtap="news" data-id="{{new1._id}}" style="height:190rpx;display: flex; flex-direction: row; margin-top:7rpx;background:#ffffff">
+        <view>
+            <view class="aa" style="text-indent:2em;margin-left:16rpx;margin-top:15rpx;width:400rpx;height:120rpx;font-weight:bold">{{new1.title}}</view>
+            <view style="font-size: 22rpx;margin-left:12rpx;margin-top:20rpx;height:20rpx">于当前时间：{{new1.time}}发布</view>
+        </view>
+        <view>
+            <image style="height:170rpx;width:302rpx;margin-top:10rpx;margin-left:20rpx" src="{{new1.jpg}}"></image>
+        </view>
+    </view>
+
+    <view bindtap="news" data-id="{{new2._id}}" style="height:190rpx;display: flex; flex-direction: row; margin-top:7rpx;background:#ffffff">
+        <view>
+            <view class="aa" style="text-indent:2em;margin-left:16rpx;margin-top:15rpx;width:400rpx;height:120rpx;font-weight:bold">{{new2.title}}</view>
+            <view style="font-size: 22rpx;margin-left:12rpx;margin-top:20rpx;height:20rpx">于当前时间：{{new2.time}}发布</view>
+        </view>
+        <view>
+            <image style="height:170rpx;width:302rpx;margin-top:10rpx;margin-left:20rpx" src="{{new2.jpg}}"></image>
+        </view>
+    </view>
+
+    <view bindtap="news" data-id="{{new3._id}}" style="height:190rpx;display: flex; flex-direction: row; margin-top:7rpx;padding-bottom: 10px;background:#ffffff">
+        <view>
+            <view class="aa" style="text-indent:2em;margin-left:16rpx;margin-top:15rpx;width:400rpx;height:120rpx;font-weight:bold">{{new3.title}}</view>
+            <view style="font-size: 22rpx;margin-left:12rpx;margin-top:20rpx;height:20rpx">于当前时间：{{new3.time}}发布</view>
+        </view>
+        <view>
+            <image style="height:170rpx;width:302rpx;margin-top:10rpx;margin-left:20rpx" src="{{new3.jpg}}"></image>
+        </view>
+    </view>
+
+    <view style="margin-top:7rpx;height:75rpx;background:white;" bindtap="lishi">
+        <view style="display: flex; flex-direction: row;">
+            <image style="width:60rpx;height:60rpx;margin-left:15rpx;" src="../../images/school/laba.png"></image>
+            <view style="margin-left:20rpx; margin-top:10rpx;font-size: 32rpx;">
+                历史新闻
+            </view>
+        </view>
+    </view>
+
+    <view bindtap="news" data-id="{{lishi1._id}}" style="height:190rpx;display: flex; flex-direction: row; margin-top:7rpx;padding-bottom: 20rpx;background:#ffffff">
+        <view>
+            <view class="aa" style="text-indent:2em;margin-left:16rpx;margin-top:15rpx;width:400rpx;height:120rpx;font-weight:bold">{{lishi1.title}}</view>
+            <view style="font-size: 22rpx;margin-left:12rpx;margin-top:20rpx;height:20rpx">于当前时间：{{lishi1.time}}发布</view>
+        </view>
+        <view>
+            <image style="height:170rpx;width:302rpx;margin-top:10rpx;margin-left:20rpx" src="{{lishi1.jpg}}"></image>
+        </view>
+    </view>
+</view>

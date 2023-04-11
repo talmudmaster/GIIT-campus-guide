@@ -1,0 +1,17 @@
+<!--miniprogram/pages/school/musiclist/list.wxml-->
+<view style="background:#ffffff;height:100%">
+    <view style="display: flex; flex-direction:row ;margin-top:15rpx">
+        <view style="margin-left:50rpx;margin-top:15rpx">欢迎来到这里！</view>
+        <button bindtap="look">喜欢就推荐一下</button>
+    </view>
+    <view style="text-align: center;margin-top:25rpx">总共{{number}}首歌曲</view>
+    <view style="margin-left:40rpx">--------------------------------------------------------</view>
+    <view wx:for="{{list}}" wx:key="key">
+        <view style="display: flex; flex-direction:row ;">
+            <view style="margin-left:50rpx;width:80vw" bindtap="copy" data-url="{{item.url}}">歌曲名: <text decode="{{true}}">&ensp;&ensp;{{item.songname}}</text></view>
+            <image src="../../../images/root/play.png" style="width:50rpx;height:50rpx" bindtap="play" data-id="{{item._id}}">
+            </image>
+        </view>
+        <view style="margin-left:40rpx">--------------------------------------------------------</view>
+    </view>
+</view>

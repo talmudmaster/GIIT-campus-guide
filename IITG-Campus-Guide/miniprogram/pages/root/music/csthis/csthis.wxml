@@ -1,0 +1,21 @@
+<!--miniprogram/pages/root/music/csthis/csthis.wxml-->
+<view>
+    <view style="margin-top:50rpx"></view>
+    <view style="text-align:center">推荐的全部信息</view>
+    <view style="margin-top:90rpx"></view>
+    <view wx:for="{{list}}" wx:key="key">
+        <view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname0}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname1}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname2}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname3}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname4}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname5}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname6}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname7}}</text></view>
+            <view bindtap="a" data-id="{{item._id}}" style="margin-left:50rpx;width:80vw">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname.ipuname8}}</text></view>
+            <view style="text-align:center;margin-top:30rpx"> 这份推荐共有{{item.number}}首歌</view>
+        </view>
+        <view style="margin-left:40rpx;margin-top:10rpx">--------------------------------------------------------</view>
+    </view>
+</view>

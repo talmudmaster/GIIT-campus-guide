@@ -1,0 +1,83 @@
+{
+    "pages": [
+        "pages/map/map",
+        "pages/school/school",
+        "pages/weather/weather",
+        "pages/mypage/mypage",
+        "pages/room/room",
+        "pages/root/root",
+        "pages/root/root-1/root-1",
+        "pages/root/newsroot/newsroot",
+        "pages/root/look/look",
+        "pages/root/music/music",
+        "pages/root/music/csthis/csthis",
+        "pages/school/swiperimg/swiperimg",
+        "pages/school/jianjie/jianjie",
+        "pages/school/information/information",
+        "pages/school/traffic/traffic",
+        "pages/school/musiclist/list",
+        "pages/school/musiclist/tuijian/tuijian",
+        "pages/school/gonggao/gong1/gong1",
+        "pages/school/gonggao/gong2/gong2",
+        "pages/school/news/news",
+        "pages/school/news/lishi/lishi"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#56ccf2",
+        "navigationBarTitleText": "信科校园导览"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/map/map",
+                "iconPath": "images/daohanglan/map1.png",
+                "selectedIconPath": "images/daohanglan/map.png",
+                "text": "校园地图"
+            },
+            {
+                "pagePath": "pages/school/school",
+                "iconPath": "images/daohanglan/school.png",
+                "selectedIconPath": "images/daohanglan/school1.png",
+                "text": "校园信息"
+            },
+            {
+                "pagePath": "pages/weather/weather",
+                "iconPath": "images/daohanglan/wealther1.png",
+                "selectedIconPath": "images/daohanglan/wealther.png",
+                "text": "今日天气"
+            },
+            {
+                "pagePath": "pages/mypage/mypage",
+                "iconPath": "images/daohanglan/my1.png",
+                "selectedIconPath": "images/daohanglan/my.png",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位"
+        }
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.19",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "useExtendedLib": {
+        "weui": true
+    },
+    "usingComponents": {
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+    },
+    "requiredBackgroundModes": [
+        "audio",
+        "location"
+    ],
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "lazyCodeLoading": "requiredComponents"
+}

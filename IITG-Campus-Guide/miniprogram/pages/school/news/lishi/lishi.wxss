@@ -1,0 +1,11 @@
+/* miniprogram/pages/school/news/lishi/lishi.wxss */
+.aa {
+    display: -webkit-box;
+    font-size: 27rpx;
+    color: #000000;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

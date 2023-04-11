@@ -1,0 +1,16 @@
+/* miniprogram/pages/root/root-1/root-1.wxss */
+input {
+    margin-top: 7rpx;
+    border: 1px solid black;
+    width: 91vw;
+}
+
+.Intnew {
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+}

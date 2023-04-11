@@ -1,0 +1,22 @@
+/* miniprogram/pages/root/newsroot/newsroot.wxss */
+textarea {
+    margin-top: 7rpx;
+    border: 1px solid black;
+    width: 91vw;
+}
+
+input {
+    margin-top: 7rpx;
+    border: 1px solid black;
+    width: 91vw;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Intnew {
+    height: 50rpx;
+    width: 50rpx;
+}

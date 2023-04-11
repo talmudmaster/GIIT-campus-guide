@@ -1,0 +1,42 @@
+<view style="display: flex; flex-direction:row ;">
+    <button bindtap="onData">查询</button>
+    <button bindtap="onAdddate">增加</button>
+</view>
+输入id：
+<input type="text" bindinput="getId" value="{{a}}"></input>
+输入Latitude：
+<input type="text" bindinput="getLatitude" value="{{b}}"></input>
+输入Longitude：
+<input type="text" bindinput="getLongitude" value="{{c}}"></input>
+输入地址Address：
+<input type="text" bindinput="getAddress" value="{{d}}"></input>
+
+<picker bindchange="doType" mode="selector" range="{{getmptype}}" value="{{casIndex}}" data-getmptype="{{getmptype[casIndex]}}">
+
+    选择地址类型(需选择)：
+    <text id="cqh">{{getmptype[casIndex]}}</text>
+
+</picker>
+输入marker图标地址：
+<input type="text" bindinput="getImages" value="{{e}}"></input>
+输入图片地址：
+<input type="text" bindinput="getPhotos" value="{{f}}"></input>
+输入markers地点介绍：
+<input type="text" bindinput="getText" value="{{f}}"></input>
+<view style="display: flex; flex-direction:row ;">
+    <button style=" font-size: 27rpx;padding:37rpx 0 37rpx 0" bindtap="music">音乐处理</button>
+    <button style=" font-size: 27rpx;padding:37rpx 0 37rpx 0" bindtap="doUpload">上传图片</button>
+    <button style=" font-size: 27rpx;padding:37rpx 0 37rpx 0" bindtap="donews">内容详情</button>
+</view>
+<view>------------------------------------------------------</view>
+<view wx:for="{{list}}" wx:key="key">
+    <view bindtap="goBack" data-id="{{item._id}}">id:{{item.id}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">latitude:{{item.latitude}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">longitude:{{item.longitude}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">address:{{item.address}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">类型:{{item.mptype}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">marker图标地址:{{item.images}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">图片地址:{{item.Photos}}</view>
+    <view bindtap="goBack" data-id="{{item._id}}">marker地点介绍:{{item.Text}}</view>
+    <view>------------------------------------------------------</view>
+</view>

@@ -1,0 +1,90 @@
+<!--miniprogram/pages/mypage/mypage.wxml-->
+<view style="height: 100%;">
+    <!-- 用户 openid -->
+    <!-- <open-data type="userAvatarUrl"></open-data> -->
+    <view wx:if="{{!hasUserInfo}}">
+        <view style="background:#ffffff;height:100vh">
+            <view style="padding-top:220rpx">
+                <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="userinfo-avatar" size="default">
+                    <view style="text-align: center;">
+                        <image style=" height:130rpx;width:130rpx" src="{{avatarUrl}}" mode="cover"></image>
+                    </view>
+                </button>
+                <view bindtap="getUserProfile" style="text-align: center;margin-top:35rpx;font-weight:bold;font-size:38rpx">点击授权登录</view>
+            </view>
+        </view>
+    </view>
+
+    <view wx:if="{{hasUserInfo}}" class="my">
+        <view class="center">
+            <view class="center_top">
+                <view class="center_top_card">
+                    <view class="center_img" bindtap="toBaseInfo">
+                        <open-data type="userAvatarUrl" class="user_head"></open-data>
+                    </view>
+                    <view class="center_info" bindtap="toBaseInfo">
+                        <view class="center_name">
+                            <open-data type="userNickName" class="user_head"></open-data>
+                        </view>
+
+                        <view class="center_welcome">
+                            欢迎使用信科校园导览
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="menu" style="font-size: 36rpx;color:#888888">
+            <view bindtap="a" style="display: flex; flex-direction:row ;display: flex;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/3.png">
+                </image>
+                <view style="margin-left:10rpx;">软件声明</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px" src="../../images/11.png">
+                </image>
+            </view>
+
+            <view bindtap="b" style="display: flex; flex-direction:row ;display: flex;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/2.png">
+                </image>
+                <view style="margin-left:10rpx;">关于我们</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px" src="../../images/11.png">
+                </image>
+            </view>
+
+            <view bindtap="c" style="display: flex; flex-direction:row ;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/1.png">
+                </image>
+                <view style="margin-left:10rpx;">联系作者</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px" src="../../images/11.png">
+                </image>
+            </view>
+
+            <button style="display: flex; flex-direction:row ;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2;width: 100%;padding: 0;font-size: 36rpx;font-weight: normal;color: #888888;" open-type="feedback">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/4.png">
+                </image>
+                <view style="margin-left:10rpx;">意见反馈</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right:18px" src="../../images/11.png">
+                </image>
+            </button>
+
+            <button style="display: flex; flex-direction:row ;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2;width: 100%;padding: 0;font-size: 36rpx;font-weight: normal;color: #888888;" open-type="share">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/5.png">
+                </image>
+                <view style="margin-left:10rpx;">推荐给好友</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right:18px" src="../../images/11.png">
+                </image>
+            </button>
+
+            <view bindtap="d" style="display: flex; flex-direction:row ;display: flex;align-items: center;height: 100rpx;margin-left: 4px;margin-right: 4px;border-bottom:1px solid #56ccf2">
+                <image style="height:60rpx;width:60rpx;margin-left:30rpx;" src="../../images/my/6.png">
+                </image>
+                <view style="margin-left:10rpx;">管理员入口</view>
+                <image style="height:40rpx;width:40rpx;margin-left:auto;margin-right: 10px;" src="../../images/11.png">
+                </image>
+            </view>
+        </view>
+        <view style="font-size:30rpx;color:#717776; text-align: center;">
+            <text decode="{{true}}">信科校园导览&ensp;|&ensp;版权归个人所有</text>
+        </view>
+    </view>
+</view>

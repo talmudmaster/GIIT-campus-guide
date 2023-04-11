@@ -1,0 +1,38 @@
+/* miniprogram/pages/map/map.wxss */
+image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.weui-search-bar__input {
+
+    background: linear-gradient(to bottom, #56ccf2, #2f80ed)
+}
+
+.img-switch-style {
+    height: 90rpx;
+    width: 90rpx;
+    position: absolute;
+    bottom: 50rpx;
+    right: 25rpx;
+    z-index: 100;
+}
+
+.img-style {
+
+    height: 80rpx;
+    width: 80rpx;
+    position: absolute;
+    bottom: 60rpx;
+    right: 70rpx;
+    opacity: 0;
+}
+
+.getlocation {
+    height: 55rpx;
+    width: 55rpx;
+    position: absolute;
+    bottom: 110rpx;
+    left: 40rpx;
+    z-index: 100;
+}

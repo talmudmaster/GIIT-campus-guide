@@ -1,0 +1,107 @@
+<view  style="height:100%">
+ <view style="height:90rpx;width:100%;display: flex; flex-direction:column;margin-top:-10rpx">
+  <mp-searchbar ext-class="weui-search-bar__input" placeholder="搜索校内想去的位置"  bindclear="del" bindinput="del" search="{{search}}"></mp-searchbar>
+ </view>
+ <view  style="margin-top:20rpx"></view>
+  <map id="map"
+    type="hidden"
+    longitude="{{location.longitude}}"
+    latitude="{{location.latitude}}" 
+    style="width:100%;height:69vh"
+    scale="16"
+    markers="{{markers}}" 
+    polyline="{{polyline}}"
+    enable-poi="ture"
+    layer-style="1"
+    show-compass="ture"
+    enable-rotate="ture"
+    show-location="{{isshowPosition}}"
+    include-points="{{includePoints}}"
+    bindmarkertap="markertap"
+    >
+    <view style="height:150rpx;width:150rpx">
+       <image style="margin-right:30rpx" src="../../images/map/m3.png" class="img-style" animation="{{animWrite}}" bindtap="write"></image>
+       <image style="margin-right:85rpx" src="../../images/map/m2.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>
+       <image style="margin-right:120rpx" src="../../images/map/m1.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>
+       <image  src="../../images/map/m.png" class="img-switch-style" animation="{{animPlus}}" bindtap="plus"></image>
+    </view>
+    <image  src="../../images/map/getlocation.png" class="getlocation"  bindtap="dingwei"></image>
+    </map>
+  <view style="height:320rpx;width:100%; margin-top:9rpx;background:#ffffff;">
+    <view style="display: flex; flex-direction:row ;margin-left:22rpx;padding-top:25rpx">
+
+      <view wx:if="isShow"  style="display: flex; flex-direction:column " bindtap="a">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/1.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，进校园</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="b">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/2.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，去逛逛</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="c">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/3.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，去吃饭</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="d">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/4.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，喝奶茶</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="e">
+        <image style="margin-left:50rpx;" src="../../images/markersMenu/5.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，进公寓</view>
+      </view>
+
+    </view>
+
+    <view style="display: flex; flex-direction:row ;margin-left:80rpx;margin-top:65rpx;">
+
+      <view style="display: flex; flex-direction:column; " bindtap="f">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/6.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，去上课</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column; " bindtap="g">
+        <image style="margin-left:50rpx" src="../../images/markersMenu/7.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          来，行政楼</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="h">
+        <image style="margin-left:50rpx;margin-bottom:3rpx" src="../../images/markersMenu/8.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          学，会生活</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column;margin-top:5rpx; " bindtap="i">
+        <image style="margin-left:50rpx;" src="../../images/markersMenu/9.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">
+          走，去运动</view>
+      </view>
+
+      <view style="display: flex; flex-direction:column " bindtap="j">
+        <image style="margin-left:50rpx;" src="../../images/markersMenu/10.png"></image>
+        <view style="font-size: 19rpx;margin-left:40rpx;display: flex;align-items: center;justify-content: center; ">其他
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <mp-dialog style="" title="是否前往{{title}}" id="{{id}}"  show="{{dialogShow}}" bindbuttontap="mapmarker" buttons="{{buttons}}">
+        <view>
+        <image bindtap="lookPhoto" mode="" style="width:480rpx;height:270rpx;" src="{{Photos}}" data-src="{{Photos}}"></image>
+       <view style="font-size:70%">{{Text}}</view>
+        </view></mp-dialog>
+  <!-- <view class="title"> -->
+  <!-- <button bindtap="chooseLocation">选择位置</button> -->
+  <!-- </view> -->
+</view>

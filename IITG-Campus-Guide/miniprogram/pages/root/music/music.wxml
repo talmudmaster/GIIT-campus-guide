@@ -1,0 +1,28 @@
+<!--miniprogram/pages/root/music/music.wxml-->
+<view style="display: flex; flex-direction:row ;">
+    <button bindtap="getmusic">查看</button>
+    <button bindtap="upmusic">增加</button>
+    <button bindtap="chooseFile">上传音乐</button>
+</view>
+歌曲名：
+<view class="a">
+    <input type="text" bindinput="name" value="{{Name}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="a"></image>
+</view>
+歌曲地址：
+<view class="a">
+    <input type="text" bindinput="address" value="{{Address}}"></input>
+    <image class="Intnew" src="../../../images/root/del.png" mode="aspectFit" bindtap="b"></image>
+</view>
+<view bindtap="z" style="margin-top:35rpx;margin-left:25rpx">查看被推荐的歌曲</view>
+<view style="text-align: center;margin-top:25rpx">总共{{number}}首歌曲</view>
+<view style="margin-left:40rpx">--------------------------------------------------------</view>
+<view wx:for="{{list}}" wx:key="key">
+    <view style="display: flex; flex-direction:row ;">
+        <view style="margin-left:50rpx;width:80vw" bindtap="doDel" data-id="{{item._id}}">歌曲名: <text decode="{{true}}"> &ensp;&ensp;{{item.songname}}</text></view>
+        <image src="../../../images/root/play.png" style="width:50rpx;height:50rpx" bindtap="play" data-id="{{item._id}}"></image>
+    </view>
+    <view style="margin-left:40rpx">
+        --------------------------------------------------------
+    </view>
+</view>

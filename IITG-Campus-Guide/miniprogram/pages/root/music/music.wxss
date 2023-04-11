@@ -1,0 +1,16 @@
+/* miniprogram/pages/root/music/music.wxss */
+input {
+    margin-top: 7rpx;
+    border: 1px solid black;
+    width: 99vw;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Intnew {
+    height: 50rpx;
+    width: 50rpx;
+}

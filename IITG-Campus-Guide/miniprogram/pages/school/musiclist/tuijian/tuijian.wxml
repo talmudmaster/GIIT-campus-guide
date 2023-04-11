@@ -1,0 +1,43 @@
+<!--miniprogram/pages/school/musiclist/tuijian/tuijian.wxml-->
+<view class="top">
+    <view style="text-align: center; border-radius:9px; background:#ffffff;height:50rpx;width:530rpx; margin-top:40rpx;margin-left:124rpx;padding-left:5rpx ">点击推荐，把喜欢的歌曲名推荐给我！</view>
+    <view>
+        <form bindsubmit="formSubmit">
+            <view class="graphic" style="margin-top:60rpx">
+                <view style="margin-left:20rpx"><text>添加推荐歌曲</text></view>
+                <view style="margin-top:40rpx"></view>
+                <view class="graphic-one" id="{{itm.kzid}}" wx:for="{{imgList}}" wx:for-item="itm" wx:for-index="idx" wx:key="id">
+                    <view class="textinput">
+                        <input type="text" name='{{itm.ipuname}}' id='{{itm.inpuid}}' placeholder="请输入推荐歌曲" bindinput="inputs" value="{{itm.shuzhi}}" />
+                    </view>
+
+                    <view class="graphic-one-one">
+                        <!-- //文本清空 -->
+                        <view>
+                            <image class="imgqk" id='{{itm.ipuid}}' bindtap="delInput" src="../../../../images/school/x.png" wx:if="{{itm.currentWordNumber1!=0}}"></image>
+                        </view>
+                        <!-- //选项删除 -->
+                        <view id='{{itm.ipuid}}' bindtap="jianquxx">
+                            <image id='{{itm.ipuid}}' class="imgjq" src="../../../../images/school/-.png"></image>
+                        </view>
+                    </view>
+
+                </view>
+                <!-- 添加 -->
+                <view style="margin-top:30rpx" class="tianjiaxx" bindtap="tianjiaxx">
+                    <image style="margin-top:7rpx" class="imgio" src="../../../../images/school/+.png"></image>
+                    <text style="margin-left:12rpx">添加选项</text>
+                </view>
+            </view>
+
+            <view class="btn-area" style="display: flex; flex-direction:row ;margin-top:100rpx">
+                <button formType="submit">推荐</button>
+                <button formType="reset">重新输入</button>
+
+            </view>
+            <view style="height:70rpx"></view>
+        </form>
+
+
+    </view>
+</view>

@@ -1,0 +1,20 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "dayjs": "^1.10.4",
+    "docxtemplater": "^3.21.1",
+    "miniprogram-sm-crypto": "^0.2.7",
+    "vant-weapp": "^0.5.29"
+  },
+  "keywords": [],
+  "devDependencies": {},
+  "description": ""
+}

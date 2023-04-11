@@ -1,0 +1,8 @@
+/* miniprogram/pages/root/root.wxss */
+input {
+    border: 1px solid black;
+}
+
+.choose {
+    width: 100%;
+}

@@ -1,0 +1,69 @@
+{
+    "pages": [
+        "pages/map/map",
+        "pages/school/school",
+        "pages/school/bus/bus",
+        "pages/school/gonggao/gong1",
+        "pages/school/gonggao/gong2",
+        "pages/school/information/information",
+        "pages/school/jianjie/jianjie",
+        "pages/school/musiclist/list",
+        "pages/school/musiclist/tuijian",
+        "pages/school/news/news",
+        "pages/school/news/lishi",
+        "pages/school/swiperimg/swiperimg",
+        "pages/weather/weather",
+        "pages/me/me"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#73a5d6",
+        "navigationBarTitleText": "信科校园导航导航",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "selectedIconPath": "/images/tabbar/icon_map_HL.png",
+                "iconPath": "/images/tabbar/icon_map.png",
+                "pagePath": "pages/map/map",
+                "text": "地图"
+            },
+            {
+                "selectedIconPath": "/images/tabbar/icon_school_HL.png",
+                "iconPath": "/images/tabbar/icon_school.png",
+                "pagePath": "pages/school/school",
+                "text": "学校信息"
+            },
+            {
+                "selectedIconPath": "/images/tabbar/icon_weather_HL.png",
+                "iconPath": "/images/tabbar/icon_weather.png",
+                "pagePath": "pages/weather/weather",
+                "text": "天气"
+            },
+            {
+                "selectedIconPath": "/images/tabbar/icon_me_HL.png",
+                "iconPath": "/images/tabbar/icon_me.png",
+                "pagePath": "pages/me/me",
+                "text": "我的"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "需要获取你当前位置信息"
+        }
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.19",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+    ]
+}

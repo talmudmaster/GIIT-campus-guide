@@ -1,0 +1,27 @@
+<!--miniprogram/pages/school/news/news.wxml-->
+<!-- <wxs src="../news/magic.wxs" module="magic"/>  -->
+<view style="background:#ffffff;height:100%">
+    <view style="text-align: center;font-weight:bold;font-size: 18px;margin-top:30rpx">{{title}}</view>
+    <view style="margin-left:20rpx;font-size: 20rpx;margin-top:20rpx">{{time}}</view>
+    <view style="text-indent:2em;margin-left:30rpx;margin-right:30rpx;margin-top:30rpx"><text decode="{{true}}">{{news}}</text></view>
+    <!-- <wxs module="m1">
+      var getfirstimg = function(str) {
+          var ss = str.split("。");
+        return ss[0];
+      }
+      module.exports.getfirstimg = getfirstimg;
+    </wxs>  
+    <block wx:for="{{mainList}}" wx:key="index">
+        <view>{{m1.getfirstimg(item.ip)}}</view>
+    </block>
+<view class="content2">  <!-- 重点在这里哦 -->
+    <!-- <block wx:for="{{magic.split(news)}}" wx:key="index" wx:if="{{index<2}}"> 
+             <!-- 我这里控制了最多显示三个 -->
+    <!-- <view>{{magic.split(news)}}</view>
+		         </block>
+		       </view> -->
+
+    <image style="width:720rpx;height:405rpx;margin-left:15rpx;margin-top:40rpx" src="{{jpg}}"></image>
+    <view style="text-align: center;margin-top:11rpx;font-size: 22rpx;">(来自新闻图片)</view>
+    <view style="height:50rpx"></view>
+</view>

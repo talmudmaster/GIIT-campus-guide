@@ -1,0 +1,50 @@
+.top{
+  background-color: rgb(238, 238, 238);
+  
+}
+.graphic {
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  margin: 0px auto;
+}
+.graphic-one {
+  background-color: rgb(255, 255, 255);
+  width: 96%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 21rpx auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.textinput {
+  margin-left: 20rpx;
+}
+.graphic-one-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgqk {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.imgjq {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.texbq {
+  margin-right: 10px;
+}
+.tianjiaxx {
+  display: flex;
+  justify-content: center;
+}
+.imgio {
+  width: 20px;
+  height: 20px;
+}
