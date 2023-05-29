@@ -45,37 +45,55 @@
 
 # 🤩 预览 + 分析
 
+## 1. 地图和选择类别
+
+给including-points加了padding
+
 ![](README/1.png)  
 
-地图和选择类别（给including-points加了padding）
+## 2. 点击地点显示自定义弹窗
+
+使用了weui的mp-dialog组件
 
 ![](README/2.png)
 
-点击地点显示自定义弹窗（使用了weui的mp-dialog组件）
+## 3. 点聚合和校园游览路线
+
+Polyline
 
 ![](README/3.png)
 
-点聚合和校园游览路线(Polyline)
+## 4. 搜索和导航
+
+调用腾讯路线规划插件实现
 
 ![](README/4.png)
 
-搜索和导航（调用腾讯路线规划插件实现）
+## 5. 校园信息页
+
+页面文字调整一下，加个间距之类的会更好
 
 ![](README/5.png)
 
-校园信息页（页面文字调整一下，加个间距之类的会更好）
+## 6. 校园信息
+
+同上
 
 ![](README/6.png)
 
-校园信息（同上）
+## 7. 天气和个人中心
+
+调用天气API，我的页面要点击授权才显示。上面放视频的话最好调整一下边距或者布局会有更好显示效果
 
 ![](README/7.png)
 
-天气和个人中心（调用天气API，我的页面要点击授权才显示。上面放视频的话最好调整一下边距或者布局会有更好显示效果）
+## 8. 后台管理
+
+后台管理，判断当前微信用户openid是否在云数据库集合中
 
 ![](README/8.png)
 
-管理（感觉这样操作不太好使，可以看看[我的项目](https://gitee.com/talmudmaster/GLU-Campus-Guide)的方法，如下）
+感觉这样操作不太好使，可以看看[我的项目](https://gitee.com/talmudmaster/GLU-Campus-Guide)的方法，如下
 
 ![](README/guanli.png)
 
