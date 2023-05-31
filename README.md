@@ -3,6 +3,8 @@
 ![展示](README/logo.png) 
     <h1> 信科校园导览小程序 </h1>
 
+[![test](https://gitee.com/talmudmaster/GIIT-campus-guide/badge/star.svg?theme=dark)](https://gitee.com/talmudmaster/GIIT-campus-guide)
+[![](https://img.shields.io/github/stars/talmudmaster/GIIT-campus-guide)](https://github.com/talmudmaster/GIIT-campus-guide)
 [![test](https://img.shields.io/badge/platform-微信小程序-green)](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 [![test](https://img.shields.io/badge/bilibili原作者-@四枂天-green)](https://space.bilibili.com/228827950)
 
